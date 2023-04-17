@@ -19,7 +19,6 @@ const LoginPage = () => {
           <img class="logo" src={logo} alt="logo" />
           </div>
         </Typography>
-        
       </Box>
 
       <Box
