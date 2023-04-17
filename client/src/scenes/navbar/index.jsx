@@ -24,6 +24,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { setMode, setLogout } from "state";
 import { useNavigate } from "react-router-dom";
 import FlexBetween from "components/FlexBetween";
+import logo from "../../img/logo.png";
+import './index.css';
 
 const Navbar = () => {
   const [isMobileMenuToggled, setIsMobileMenuToggled] = useState(false);
@@ -56,7 +58,7 @@ const Navbar = () => {
             },
           }}
         >
-          Sociopedia
+          <img class="logo" src={logo} alt="logo" />
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
